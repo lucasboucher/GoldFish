@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --color-black: rgb(5, 5, 5);
+    --color-grey: rgb(238, 227, 204);
+    --color-white: rgb(250, 250, 250);
+    --color-burgundy: rgb(37, 11, 13);
+    --color-gold: rgb(238, 171, 30);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 200px;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--color-burgundy);
+    padding: 20px 20px;
+    color: var(--color-grey);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav .logo {
+    width: 25%;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav p {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+nav li:hover {
+    font-weight: 600;
+}
+
+.nav-infos {
+    background-color: var(--color-grey);
+    color: var(--color-burgundy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-infos {
+        display: none;
+    }
+}
+
+.stocks-decrease {
+    color: red;
+}
+
+.lang-icon {
+    font-weight: 600;
+}
+
+.separator {
+    color: var(--color-gold);
+}
+
+main {
+    display: flex;
+    padding-top: 80px;
+    height: calc(100vh - 80px);
+}
+
+.cover {
+    width: calc(100% - 200px);
+    background-image: url(/images/photo.jpg);
+    background-size: cover;
+}
+
+.tuile {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    position: relative;
+    top: 75%;
+    left: 10%;
+    width: 40%;
+    padding: 20px;
+}
+
+.tuile .titre {
+    font-size: 3em;
+}
+
+.actus {
+    background-color: var(--color-white);
+    width: 180px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.actus > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actus .tag {
+    color: var(--color-burgundy);
+    text-transform: uppercase;
+}
+
+.actus .titre {
+    font-size: 1.25em;
+}
+
+.actus .date {
+    color: var(--color-burgundy);
+}
+
+.actu hr {
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
