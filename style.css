@@ -11,6 +11,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 a {
@@ -23,6 +27,7 @@ header {
     grid-template-columns: auto 200px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav {
@@ -159,4 +164,76 @@ h2 {
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.presse {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.presse h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.presse section {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.actu .titre {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.actu .tag {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer svg {
+    fill: var(--color-burgundy);
+    height: 25px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.member img {
+    height: 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    appearance: unset;
+    border: 2px solid var(--color-grey);
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    height: 100px;
 }
